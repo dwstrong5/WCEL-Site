@@ -9,6 +9,11 @@
     font-display: swap;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -25,8 +30,11 @@ body {
     justify-content: space-between;
     align-items: center;
     border: thin black solid;
-    padding: 1em 10em 1em 10em;
+    padding: 1rem 10rem 1rem 10rem;
     margin-bottom: auto;
+    position: sticky; top: 0;
+    background-color: #ffffff;
+
 }
 
 .header-logo {
@@ -40,8 +48,8 @@ ul {
 }
 
 a {
-    padding: 0 1em;
-    margin: 0 0.3em;
+    padding: 0 1rem;
+    margin: 0 0.3rem;
     text-decoration: none;
     color:black
 }
@@ -59,22 +67,22 @@ a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .main-top-img-container {
     height: 360px;
-    width: 100%;
+    width: 100vw;
 }
 
 .main-top-img {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
 }
 
 .main-top-img-bottom-text {
+    display:flex;
     font-family: 'Fjalla One';
     font-weight: bolder;
     font-size: 32pt;
@@ -82,7 +90,52 @@ a:hover {
     background-color: #1cbbb4;
     height:64px;
     width:100%;
-    padding: 0.5em 0em 0.5em 1em;
+    padding: 0.5vh 0vw 0.5vh 3vw;
+    align-items: center;
+}
+
+.mission-statement-container, .vision-statement-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:80vw;
+    padding: 4vh 0vw 2vh 10vw;
+}
+
+.mission-title, .vision-title {
+    font-family: 'Fjalla One';
+    font-weight: bolder;
+    font-size: 32pt;
+}
+
+.mission-statement, .vision-statement {
+    overflow-wrap:break-word;
+    font-size: 18pt
+}
+
+.mid-container {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 3% 15% 3% 15%;
+}
+
+.equitable-society-container-left, .equitable-society-container-mid, .equitable-society-container-right {
+    font-size: 14pt;
+    color:#ffffff;
+    overflow-wrap: break-word;
+    height:auto;
+    width:240px;
+    border-radius: 8px;
+    padding: 4%;
+}
+.equitable-society-container-left {
+    background-color: #8dc63f;
+}
+.equitable-society-container-mid {
+    background-color: #00aeef;
+}
+.equitable-society-container-right {
+    background-color: #5676ba;
 }
 
 .footer {
