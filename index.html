@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EI Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img class="header-logo" src="images/WCEL Letters and Icon Logo 2021.jpg" alt="">
+        <ul class="header-links">
+            <li>Page 1</li>
+            <li>Page 2</li>
+            <li>Page 3</li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <form action="ww.httpbin.org/post" method="post">
+            <div class="field-row">
+                <label for="birthdate">Today's Date:</label>
+                <input type="text" id="input_date" placeholder="MM/DD/YYYY" onfocus="this.type='date'">
+            </div>
+            <div class="field-row">
+                <label for="birthdate">Child's Birthdate</label>
+                <input type="text" id="birthdate" placeholder="MM/DD/YYYY" onfocus="this.type='date'">
+            </div>
+            <div class="field-row">
+                <input type="text" id="first_name" placeholder="First Name">
+                <input type="text" id="last_name" placeholder="Last Name">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+            Footer
+        </div>
+</body>
+</html>
