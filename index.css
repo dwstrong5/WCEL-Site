@@ -29,7 +29,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: thin black solid;
     padding: 1rem 10rem 1rem 10rem;
     margin-bottom: auto;
     position: sticky; top: 0;
@@ -62,12 +61,20 @@ a:hover {
     color: gray;
 }
 
-.content-container {
+.content-container, .quote-container {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.quote-container {
+    padding-left: 25%;
+    width: 50%;
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size:18pt;
 }
 
 .main-top-img-container {
@@ -108,6 +115,7 @@ a:hover {
     font-size: 32pt;
 }
 
+
 .mission-statement, .vision-statement {
     overflow-wrap:break-word;
     font-size: 18pt
@@ -116,7 +124,7 @@ a:hover {
 .mid-container {
     display:flex;
     justify-content: space-evenly;
-    padding: 3% 15% 3% 15%;
+    padding: 2% 15% 2% 15%;
 }
 
 .equitable-society-container-left, .equitable-society-container-mid, .equitable-society-container-right {
@@ -125,8 +133,12 @@ a:hover {
     overflow-wrap: break-word;
     height:auto;
     width:240px;
-    border-radius: 8px;
-    padding: 4%;
+    border-radius: 36px;
+    padding: 2% 4% 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .equitable-society-container-left {
     background-color: #8dc63f;
@@ -140,10 +152,42 @@ a:hover {
 
 .footer {
     display: flex;
+    justify-content: space-between;
+    color:#ffffff;
+    background-color: #1cbbb4;
     justify-content: center;
     align-items: center;
     border: thin solid black;
     margin-top: auto;
 }
 
+.equitable-society-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+}
 
+#wcel-footer-logo {
+    height: 180px;
+    width:auto;
+    background-color: #1cbbb4;
+}
+
+.united-way-container {
+    font-family: 'Fjalla One';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.united-way-container p {
+    width: 150px;
+    text-align: end;
+    padding-right: 0.75vw;
+}
+
+.united-way-logo {
+    width: auto;
+    height: 96px;
+}
