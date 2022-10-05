@@ -75,6 +75,7 @@ a:hover {
     text-align: center;
     font-family: 'Fjalla One';
     font-size:18pt;
+    padding-bottom: 4vh;
 }
 
 .main-top-img-container {
@@ -168,9 +169,21 @@ a:hover {
     margin-bottom: 2vh;
 }
 
+.logos-container {
+    display:flex;
+    flex-direction: row;
+}
+
 #wcel-footer-logo {
     height: 180px;
     width:auto;
+    background-color: #1cbbb4;
+}
+
+.social-media-icons img {
+    width:48px;
+    height: auto;
+    fill:#ffffff;
     background-color: #1cbbb4;
 }
 
